@@ -11,8 +11,7 @@
   },
   "author": "Pavlo",
   "homepage": "https://github.com/MalashnyakP/Sigma-task1#readme",
-  
   "dependencies": {
-    "tsc": "^2.0.3"
+    "typescript": "^4.5.2"
   }
 }

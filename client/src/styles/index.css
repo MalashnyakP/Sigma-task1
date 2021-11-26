@@ -1,11 +1,6 @@
-html,
 body {
   padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 6px;
 }
 
 table {
@@ -29,12 +24,13 @@ tr {
   cursor: default;
 }
 
-th,
-td {
+.grid-header,
+.grid-data {
   padding: 15px;  
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-th {
+.grid-header {
   position: sticky;
   top: 0;
   background: #e8e8e8;
@@ -45,7 +41,7 @@ th {
   position: relative;
 }
 
-td {
+.grid-data {
   margin: 4px 0px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -55,15 +51,15 @@ td {
   background-color: white;
 }
 
-tr {  
+.grid-row {  
   margin: 10px 0px;
 }
 
 
-tr:hover>td {
+.grid-row:hover>.grid-data {
   box-shadow: 0 3px 1px -2px rgb(0 0 0 / 50%), 0 2px 2px 0 rgb(0 0 0 / 36%), 0 1px 5px 0 rgb(0 0 0 / 32%);
 }
 
-tr:first-child>td {
+.grid-row:first-child>.grid-data {
     margin: 0;
 }

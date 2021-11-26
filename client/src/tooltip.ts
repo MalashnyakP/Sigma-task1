@@ -23,8 +23,7 @@ class Tooltip extends HTMLElement {
   
         style.textContent = `
             .wrapper {
-                position: relative;
-                
+                position: relative;    
             }
   
             .tooltip {
@@ -33,8 +32,7 @@ class Tooltip extends HTMLElement {
                 color: #6e6e6e;
                 text-align: center;
                 border-radius: 6px;
-                padding: 5px 8px;
-            
+                padding: 5px 8px;            
                 position: absolute;
                 z-index: 3;
                 top: 100%;
@@ -73,5 +71,4 @@ class Tooltip extends HTMLElement {
     }
 }
 
-  
 customElements.define('my-tooltip', Tooltip);
