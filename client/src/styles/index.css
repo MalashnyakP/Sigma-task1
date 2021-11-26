@@ -1,0 +1,69 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
+  grid-template-columns: 
+    minmax(40px, 2%)
+    minmax(115px, 18%)
+    minmax(400px, 57%)
+    minmax(100px, 10%)
+    minmax(115px, 13%);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+  cursor: default;
+}
+
+th,
+td {
+  padding: 15px;  
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #e8e8e8;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #6e6e6e;
+  position: relative;
+}
+
+td {
+  margin: 4px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #252525;
+
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+}
+
+tr {  
+  margin: 10px 0px;
+}
+
+
+tr:hover>td {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 50%), 0 2px 2px 0 rgb(0 0 0 / 36%), 0 1px 5px 0 rgb(0 0 0 / 32%);
+}
+
+tr:first-child>td {
+    margin: 0;
+}
