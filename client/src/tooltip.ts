@@ -61,18 +61,17 @@ class Tooltip extends HTMLElement {
     }
 
     connectedCallback() {
-            if (this.shadowRoot) {
-                const infoText = this.shadowRoot.querySelector('.info');
-            if (infoText) {
-                infoText.textContent = this.getAttribute('visible-text');
-            }
+        const infoText = this.shadowRoot?.querySelector('.info');
+        if (infoText) {
+            infoText.textContent = this.getAttribute('visible-text');
+        }
 
-            const tooltip = this.shadowRoot.querySelector('.tooltip');
-            if (tooltip) {
-                tooltip.textContent = this.getAttribute('tooltip-text');
-            }
+        const tooltip = this.shadowRoot?.querySelector('.tooltip');
+        if (tooltip) {
+            tooltip.textContent = this.getAttribute('tooltip-text');
         }
     }
-  }
+}
+
   
 customElements.define('my-tooltip', Tooltip);
