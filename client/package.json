@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MalashnyakP/Sigma-task1.git"
+  },
+  "author": "Pavlo",
+  "homepage": "https://github.com/MalashnyakP/Sigma-task1#readme",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}

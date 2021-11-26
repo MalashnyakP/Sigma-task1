@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 6px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
+  grid-template-columns: 
+    minmax(40px, 2%)
+    minmax(115px, 18%)
+    minmax(400px, 57%)
+    minmax(100px, 10%)
+    minmax(115px, 13%);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+  cursor: default;
+}
+
+.grid-header,
+.grid-data {
+  padding: 15px;  
+}
+
+.grid-header {
+  position: sticky;
+  top: 0;
+  background: #e8e8e8;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #6e6e6e;
+  position: relative;
+}
+
+.grid-data {
+  margin: 4px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #252525;
+
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+}
+
+.grid-row {  
+  margin: 10px 0px;
+}
+
+
+.grid-row:hover>.grid-data {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 50%), 0 2px 2px 0 rgb(0 0 0 / 36%), 0 1px 5px 0 rgb(0 0 0 / 32%);
+}
+
+.grid-row:first-child>.grid-data {
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px){
+  table {
+    grid-template-columns: 
+    minmax(50px, 50px)
+    minmax(150px, 150px)
+    minmax(500px, 500px)
+    minmax(150px, 150px)
+    minmax(150px, 150px);
+  }
+}

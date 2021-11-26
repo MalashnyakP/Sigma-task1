@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "es6",
+        "sourceMap": true,
+        "strict": true,
+        "outDir": "./build"
+    }
+}
