@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 6px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 table {
@@ -27,7 +28,6 @@ tr {
 .grid-header,
 .grid-data {
   padding: 15px;  
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .grid-header {
@@ -62,4 +62,15 @@ tr {
 
 .grid-row:first-child>.grid-data {
     margin: 0;
+}
+
+@media screen and (max-width: 1000px){
+  table {
+    grid-template-columns: 
+    minmax(50px, 50px)
+    minmax(150px, 150px)
+    minmax(500px, 500px)
+    minmax(150px, 150px)
+    minmax(150px, 150px);
+  }
 }
